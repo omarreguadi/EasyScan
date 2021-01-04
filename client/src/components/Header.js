@@ -56,6 +56,8 @@ export default function Header() {
                                 </ul>
                             </li>
                         }
+                        {auth.login && <li><span className="dropdown-item" onClick={handleLogout}>Se déconnecter</span></li>
+                        }
 
                     </ul>
                 </div>

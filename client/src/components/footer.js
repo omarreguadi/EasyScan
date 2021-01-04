@@ -8,30 +8,30 @@ function Footer() {
                 <div className="row mb-5">
                     {/* Column1 */}
                     <div className="col">
-                        <h4>Nous contactez</h4>
-                        <ui className="list-unstyled">
+                        <h1>Nous contactez</h1>
+                        <ul className="list-unstyled">
                             <li>01 25 25 25 25</li>
                             <li>Paris , France</li>
                             <li>Contact@easyscan.fr</li>
-                        </ui>
+                        </ul>
                     </div>
                     {/* Column2 */}
                     <div className="col">
-                        <h4>LIENS UTILES</h4>
-                        <ui className="list-unstyled">
+                        <h1>LIENS UTILES</h1>
+                        <ul className="list-unstyled">
                             <li>Télécharger l'application</li>
                             <li>Blog</li>
                             <li>Nous rejoindre</li>
-                        </ui>
+                        </ul>
                     </div>
                     {/* Column3 */}
                     <div className="col">
-                        <h4> AUTRES QUESTIONS</h4>
-                        <ui className="list-unstyled">
+                        <h1> AUTRES QUESTIONS</h1>
+                        <ul className="list-unstyled">
                             <li>Fonctionnalités</li>
                             <li>Version membre</li>
                             <li>Des questions ?</li>
-                        </ui>
+                        </ul>
                     </div>
                 </div>
                 <hr />
