@@ -7,8 +7,8 @@ export default function Blog() {
     const { response, isLoading } = useFetch("", true)
     return (
         <div className="container">
-            <div className="row">
-                <h1>ARTICLES</h1>
+            <div className="row text-center pt-5">
+                <h1> BLOG</h1>
             </div>
             {isLoading ? <div className="row"> <Skeleton height={80} /> <Skeleton height={80} /> <Skeleton height={80} /> <Skeleton height={80} /> <Skeleton height={80} /> </div> :
                 <div className="row">
@@ -17,9 +17,10 @@ export default function Blog() {
                             {response?.data.data.map((post) => {
                                 return (
                                     <li className="list-item list-item--custom" key={post._id}>
-                                        <Link to={`/posts/${post._id}`}> <h1 dangerouslySetInnerHTML={{ __html: post?.title }} /> </Link>
-                                        {/* <p dangerouslySetInnerHTML={{ __html: post?.body}} /> */}
-                                        <hr />
+                                        <h1 dangerouslySetInnerHTML={{ __html: post?.title }} />
+                                         <p dangerouslySetInnerHTML={{ __html: post?.body}} />
+                                <Link className="text-center" to={`/posts/${post._id}`}> <p> Lire La suite </p></Link>
+                                        <hr/>
                                     </li>
                                 )
                             })}
