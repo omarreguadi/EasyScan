@@ -7,7 +7,7 @@ export  const notify = ({ error, msg }) => {
         position: toast.POSITION.BOTTOM_RIGHT,
       });
     } else {
-      toast.success(msg || "Authentification réussis !", {
+      toast.success(msg || "Opérations réussis !", {
         position: toast.POSITION.BOTTOM_RIGHT,
       });
     }

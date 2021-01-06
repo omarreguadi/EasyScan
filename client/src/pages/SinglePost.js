@@ -106,10 +106,8 @@ export default function SinglePost(props) {
                     <div className="col-md-12">
                         {isLoading ? <Skeleton height={80} /> : <h1 className="mb-5 p-2" id="editor" dangerouslySetInnerHTML={{ __html: response?.data.data.title }} />}
                         {isLoading ? <Skeleton count={5} /> : <p id="editor2" className=" p-2" dangerouslySetInnerHTML={{ __html: response?.data.data.body }} />}
-                        <hr />
-                        <span>{isLoading ? <Skeleton width={100} /> : response?.data.data.author.name} </span>
-                        <span>{isLoading ? < Skeleton width={100} /> : response?.data.data.author.lastName} </span>
-                        <span>{isLoading ? < Skeleton width={100} /> : response?.data.data.author.email}</span>
+
+
                     </div>
                 </div>
                 <div className="row my-5">

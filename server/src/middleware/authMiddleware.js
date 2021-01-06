@@ -5,7 +5,7 @@ const auth = function async (req, res, next) {
     const token = req.cookies['jwt']
     if (!token) return res.status(401).json({
         success: false,
-        error: 'Access denied!'
+        error: 'Acces refusé!'
     })
     try {
         const verified = jwt.verify(token, process.env.SECRET_TOKEN)

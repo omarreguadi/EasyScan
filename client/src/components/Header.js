@@ -43,18 +43,13 @@ export default function Header() {
                             <Link to="/add" className="nav-link"> Nouveau Article</Link>
                         </li>
                         }
-                        {auth.login &&
-                            <li className="nav-item dropdown">
-                                <span className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                                     {auth.userInfo.name}
-                    </span>
-                                <ul className="dropdown-menu " aria-labelledby="navbarDropdown">
-                                    <li><Link to="/user" className="dropdown-item" >Utilisateur</Link></li>
-                                    <li><Link to="/dashboard" className="dropdown-item" >Tableau de bord</Link></li>
-                                    <li><hr className="dropdown-divider" /></li>
-                                    <li><span className="dropdown-item" onClick={handleLogout}>Se déconnecter</span></li>
-                                </ul>
-                            </li>
+                        {auth.login && <li className="nav-item">
+                            <Link to="/user" className="nav-link"> Utilisateur</Link>
+                        </li>
+                        }
+                        {auth.login && <li className="nav-item">
+                            <Link to="/dashboard" className="nav-link"> Tableau de bord</Link>
+                        </li>
                         }
                         {auth.login && <li><span className="dropdown-item" onClick={handleLogout}>Se déconnecter</span></li>
                         }
