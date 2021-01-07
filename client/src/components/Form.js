@@ -33,7 +33,7 @@ export default function Form(props) {
                         </div>
                         <div className="mb-3 form-check">
                             <input type="checkbox" className="form-check-input" id="exampleCheck1" onChange={(e) => props.handleChange(e)} />
-                            <label className="form-check-label" htmlFor="exampleCheck1">garde moi</label>
+                            <label className="form-check-label" htmlFor="exampleCheck1">Se souvenir de moi</label>
                         </div>
                         <button type="submit" className="btn btn-primary">Valider</button>
                     </form>

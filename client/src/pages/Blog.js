@@ -19,7 +19,7 @@ export default function Blog() {
                                     <li className="list-item list-item--custom" key={post._id}>
                                         <h1 dangerouslySetInnerHTML={{ __html: post?.title }} />
                                          <p dangerouslySetInnerHTML={{ __html: post?.body}} />
-                                <Link className="text-center" to={`/posts/${post._id}`}> <p> Lire La suite </p></Link>
+                                <Link className="text-center" to={`/posts/${post._id}`}> <p> Lire L'article </p></Link>
                                         <hr/>
                                     </li>
                                 )

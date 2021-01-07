@@ -111,7 +111,7 @@ export default function SinglePost(props) {
                     </div>
                 </div>
                 <div className="row my-5">
-                    <h2>Comments</h2>
+                    <h2>Commentaires</h2>
                     {!show && <button className="btn btn-outline-primary my-2" onClick={loadComments}>Commentaire</button>}
                     <div className="col-md-12 my-5">
                         {comments && (comments.length > 0) ?

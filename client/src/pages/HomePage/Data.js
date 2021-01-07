@@ -12,7 +12,9 @@ export const homeObjOne = {
     imgStart: '',
     img: require('../../assets/images/svg-1.svg'),
     alt: 'Scanner facilement vos produits ',
-    start: ''
+    start: '',
+    url: false,
+    href: 'https://github.com/OmarATARI/EasyScan'
 };
 
 export const homeObjTwo = {
@@ -29,7 +31,8 @@ export const homeObjTwo = {
     imgStart: '',
     img: require('../../assets/images/svg-2.svg'),
     alt: 'Transparence choix produits',
-    start: ''
+    start: '',
+    url: '/blog'
 };
 
 export const homeObjThree = {
@@ -47,7 +50,9 @@ export const homeObjThree = {
     imgStart: 'start',
     img: require('../../assets/images/profile.jpg'),
     alt: 'Vault',
-    start: 'true'
+    start: 'true',
+    url: '/blog',
+
 };
 
 export const homeObjFour = {
@@ -60,9 +65,10 @@ export const homeObjFour = {
     headline: 'Aucune marque nous rémunére',
     description:
         'EasyScan n affiche pas de publicité dans l application. Aucune marque ne peut nous rémunérer pour mettre en avant ces produits et on ne revend aucune donnée des utilisateurs ',
-    buttonLabel: 'Télécharger APK',
+    buttonLabel: 'Lire la suite',
     imgStart: 'start',
     img: require('../../assets/images/svg-3.svg'),
     alt: 'vos données sont protégés',
-    start: 'true'
+    start: 'true',
+    url: '/blog'
 };

@@ -1,12 +1,13 @@
 import React from "react";
 import "../assets/styles/Footer.css";
+import {Link} from "react-router-dom";
 
 function Footer() {
     return (
         <div className="main-footer ">
             <div className="container">
                 <div className="row mb-5">
-                    {/* Column1 */}
+                    {/* Colonne  1*/}
                     <div className="col">
                         <h1 className="title-size ">Nous contactez</h1>
                         <ul className="list-unstyled">
@@ -15,20 +16,20 @@ function Footer() {
                             <li>Contact@easyscan.fr</li>
                         </ul>
                     </div>
-                    {/* Column2 */}
+                    {/* colonne 2 */}
                     <div className="col">
                         <h1 className="title-size ">LIENS UTILES</h1>
                         <ul className="list-unstyled">
-                            <li>Télécharger l'application</li>
-                            <li>Blog</li>
-                            <li>Nous rejoindre</li>
+                            <Link to="/" className="link-footer" ><li>Télécharger l'application</li></Link>
+                            <Link to="/blog" className="link-footer"> <li>Blog</li></Link>
+                            <Link to="/services" className="link-footer" > <li>Services</li></Link>
                         </ul>
                     </div>
-                    {/* Column3 */}
+                    {/* Colonne 3 */}
                     <div className="col">
                         <h1 className="title-size "> AUTRES QUESTIONS</h1>
                         <ul className="list-unstyled">
-                            <li>Fonctionnalités</li>
+                            <Link to="/services"  className="link-footer"> <li>Fonctionnalités</li></Link>
                             <li>Version membre</li>
                             <li>Des questions ?</li>
                         </ul>

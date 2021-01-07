@@ -26,7 +26,9 @@ function InfoSection({
   img,
   alt,
   imgStart,
-  start
+  start,
+                       url,
+    href
 }) {
   return (
     <>
@@ -38,10 +40,10 @@ function InfoSection({
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                <Link to='/sign-up'>
-                  <Button big fontBig primary={primary}>
+               <Link to={url} >
+                 <a href={href}> <Button big fontBig primary={primary}>
                     {buttonLabel}
-                  </Button>
+                  </Button></a>
                 </Link>
               </TextWrapper>
             </InfoColumn>
